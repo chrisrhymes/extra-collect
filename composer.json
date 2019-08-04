@@ -1,0 +1,31 @@
+{
+    "name": "chrisrhymes/extra-collect",
+    "description": "A Laravel package containing a collection of collections",
+    "type": "library",
+    "license": "MIT",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ChrisRhymes\\ExtraCollect\\ExtraCollectServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    },
+    "require-dev": {
+        "laravel/framework": "^5.8",
+        "orchestra/testbench": "3.8"
+    },
+    "autoload": {
+        "psr-4": {"ChrisRhymes\\ExtraCollect\\": "src/"}
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ChrisRhymes\\ExtraCollect\\Test\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
